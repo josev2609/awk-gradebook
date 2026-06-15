@@ -38,3 +38,12 @@ Chelsey    142
 #Este comando filtra las filas donde el campo $3 es FINAL.
 #Luego usa printf para mostrar el nombre alineado a la izquierda y la nota alineada a la derecha.
 #El campo $1 es el estudiante y el campo $4 es la puntuación obtenida
+#Tarea 4
+#Comando:
+#awk -F',' 'NR>1 && $4 < ($5 * 0.60) {count++} END {print count}' Lab03-data.csv
+#resultado:
+50
+#Explicación:
+#Este comando cuenta las entregas cuya puntuación es menor al 60% del máximo permitido.
+#El campo $4 contiene la puntuación obtenida y el campo $5 contiene el puntaje máximo.
+#Se usa $5 porque cada tarea puede tener un valor máximo diferente.
