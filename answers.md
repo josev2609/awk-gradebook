@@ -47,3 +47,24 @@ Chelsey    142
 #Este comando cuenta las entregas cuya puntuación es menor al 60% del máximo permitido.
 #El campo $4 contiene la puntuación obtenida y el campo $5 contiene el puntaje máximo.
 #Se usa $5 porque cada tarea puede tener un valor máximo diferente.
+#Tarea 5
+#Archivo usado:
+#assignment_report.awk
+#Comando:
+#awk -f assignment_report.awk Lab03-data.csv
+#resultado:
+H07              40      100    72.93
+Q01               9       20    14.29
+L01              27       50    40.21
+Q02               9       20    14.86
+L02              23       50    39.21
+Q03               8       20    15.07
+L03              19       50    36.57
+Q04              13       20    16.43
+FINAL           116      200   156.86
+Q05               8       18    15.07
+L04              25       50    40.36
+#Explicación:
+#Este script agrupa las entregas por tarea usando el campo $3.
+#Usa matrices asociativas para calcular el mínimo, máximo y promedio de cada tarea.
+#El promedio se calcula dividiendo la suma de puntuaciones para el número de entregas.
