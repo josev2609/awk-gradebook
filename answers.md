@@ -68,3 +68,24 @@ L04              25       50    40.36
 #Este script agrupa las entregas por tarea usando el campo $3.
 #Usa matrices asociativas para calcular el mínimo, máximo y promedio de cada tarea.
 #El promedio se calcula dividiendo la suma de puntuaciones para el número de entregas.
+#Tarea 6
+#Archivo usado:
+#grade_by_student.awk
+#Comando:
+#awk -f grade_by_student.awk Lab03-data.csv
+#resultado:
+Lucia           89.53        B
+Kenji           86.45        B
+Chelsey         62.65        D
+Eliza           84.16        B
+Shane           93.12        A
+Noah            63.08        D
+Ava             81.43        B
+Maria           79.57        C
+Priya           71.04        C
+Jackson         78.64        C
+Sam             72.90        C
+#Explicación:
+#Este script suma los puntos obtenidos y los puntos posibles de cada estudiante.
+#Usa dos matrices asociativas: obtenido para acumular $4 y posible para acumular $5.
+#Luego calcula el porcentaje total y asigna una letra usando condiciones if, else if y else.
