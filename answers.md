@@ -20,7 +20,20 @@
 #Comando:
 #awk -F',' 'NR>1 && $3=="FINAL" {printf "%-10s %3d\n", $1, $4}' Lab03-data.csv
 #resultado:
-PEGUE_AQUI_LAS_LINEAS_QUE_SALIERON
+Jackson    169
+Kenji      162
+Shane      193
+Noah       116
+Lucia      200
+Priya      159
+Andrew     123
+Diana      152
+Maria      152
+Eliza      141
+Tomas      163
+Sam        152
+Ava        172
+Chelsey    142
 #Explicación:
 #Este comando filtra las filas donde el campo $3 es FINAL.
 #Luego usa printf para mostrar el nombre alineado a la izquierda y la nota alineada a la derecha.
