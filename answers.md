@@ -89,3 +89,24 @@ Sam             72.90        C
 #Este script suma los puntos obtenidos y los puntos posibles de cada estudiante.
 #Usa dos matrices asociativas: obtenido para acumular $4 y posible para acumular $5.
 #Luego calcula el porcentaje total y asigna una letra usando condiciones if, else if y else.
+#Tarea 7
+#Archivo usado:
+#run.sh
+#Comando:
+#./run.sh Lab03-data.csv
+#resultado:
+Diana           62.08        D
+Eliza           84.16        B
+Jackson         78.64        C
+Kenji           86.45        B
+Lucia           89.53        B
+Maria           79.57        C
+Noah            63.08        D
+Priya           71.04        C
+Sam             72.90        C
+Shane           93.12        A
+Tomas           82.22        B
+#Explicación:
+#Este script Bash recibe el archivo CSV como argumento usando $1.
+#Ejecuta el script grade_by_student.awk sobre el archivo recibido.
+#Luego mantiene el encabezado en la parte superior y ordena alfabéticamente los estudiantes con sort.
